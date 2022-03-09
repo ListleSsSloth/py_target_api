@@ -64,7 +64,7 @@ class TargetApiClient(object):
     def __init__(
         self,
         client_id: str,
-        client_secret: str,
+        client_secret: str = None,
         token: str = None,
         scopes: tuple = (),
         token_updater: Callable[[dict], None] = None,
